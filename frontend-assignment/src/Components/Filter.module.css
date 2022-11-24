@@ -1,0 +1,73 @@
+.filter__ {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.name {
+  margin: 0;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+.pods {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+.pods__check {
+  margin-left: 0.2rem;
+  font-size: 0.8rem;
+  color: grey;
+}
+.pods__check > div > input {
+  height: 10px;
+}
+.selects {
+  margin-left: 0.45rem;
+  margin-top: 0.2rem;
+  height: 27px;
+  width: 93%;
+}
+
+.city {
+  margin-left: 0.45rem;
+  margin-top: 0.2rem;
+  height: 23px;
+  width: 90%;
+}
+
+.up {
+  font-size: 0.8rem;
+  color: #bcbcbc;
+}
+
+.filter__ > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btnAp {
+  width: 50%;
+  color: white;
+  height: 25px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #ff755c;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.btnCl {
+  width: 50%;
+  color: #ff755c;
+  height: 25px;
+  margin: auto;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background-color: #f6f7f9;
+}

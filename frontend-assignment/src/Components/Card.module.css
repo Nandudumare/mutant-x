@@ -1,0 +1,118 @@
+.card {
+  height: 350px;
+  max-height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.cover {
+  height: 30%;
+  background-color: black;
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+}
+.profile {
+  position: relative;
+  height: 70%;
+  background-color: white;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+}
+.img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.name_pro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 2.3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.name_pro > svg {
+  color: #5dc68d;
+  margin-top: 0.1rem;
+}
+
+.pods_pro {
+  color: #ff755c;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.ratings_location_pro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  margin-top: 0.2rem;
+}
+
+.ratings_location_pro > div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.ratings_location_pro > div > svg {
+  margin-top: 0.2rem;
+}
+
+.ratings_location_pro > div:nth-child(1) {
+  color: #ffb400;
+}
+.ratings_location_pro > div:nth-child(2) > svg {
+  color: #5dc68d;
+}
+
+.description_pro {
+  height: 59.9px;
+  color: grey;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 0.6rem;
+  overflow: hidden;
+  /* white-space: nowrap;
+  text-overflow: ellipsis; */
+}
+
+.skills_pro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skills_pro_per {
+  /* height: 20px; */
+  width: auto;
+  padding: 0.5rem;
+  background-color: rgb(249, 235, 255);
+  color: rgb(149, 0, 255);
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 5px;
+}

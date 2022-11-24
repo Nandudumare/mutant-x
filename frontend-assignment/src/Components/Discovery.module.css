@@ -1,0 +1,83 @@
+.discovery {
+  height: 92vh;
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f7f9;
+}
+
+.discovery > div:nth-child(1) {
+  height: 100%;
+  width: 20%;
+  border-right: 1px solid rgb(196, 189, 189);
+}
+.discovery > div:nth-child(2) {
+  height: 100%;
+  width: 80%;
+  /* border: 2px solid blue; */
+}
+
+.head {
+  height: 5.1rem;
+  background-color: white;
+  /* margin-top: -1rem; */
+  display: flex;
+  flex-direction: column;
+}
+.name_ {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.navs_ {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  /* gap: 1rem; */
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.navs_ > div {
+  height: 20px;
+  width: 70px;
+  text-align: center;
+  /* border: 1px solid red; */
+  cursor: pointer;
+}
+
+.searchDiv {
+  width: 95%;
+  margin: auto;
+  height: 50px;
+  margin-top: 1rem;
+}
+
+.searchbar {
+  width: 95%;
+  height: 30px;
+  /* margin: auto; */
+  border: none;
+  margin-left: 1.3rem;
+}
+
+.container {
+  height: 430px;
+  width: 90.5%;
+  overflow-y: scroll;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: repeat(auto, auto);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

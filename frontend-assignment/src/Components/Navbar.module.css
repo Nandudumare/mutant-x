@@ -47,8 +47,6 @@
 .drawer > div:nth-child(1) > div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  /* color: white; */
-  /* gap:0.2rem; */
   margin-top: 0.5rem;
 }
 .drawer > div:nth-child(1) > div:nth-child(2) > div,
@@ -60,7 +58,6 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  /* border: 1px solid white; */
   align-items: center;
   overflow: hidden;
   color: white;
@@ -102,4 +99,41 @@
   margin-top: 0.7rem;
   margin-right: 0.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    position: fixed !important;
+    z-index: 2;
+  }
+
+  .drawer {
+    position: fixed !important;
+    z-index: 2;
+  }
+  .drawer > div:nth-child(1) > div:nth-child(2) > div,
+  .settings {
+    width: 70%;
+    animation-name: navs;
+    animation-duration: 1s;
+  }
+
+  @keyframes navs {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 70%;
+    }
+  }
+
+  .drawer > div:nth-child(1) > div:nth-child(1) {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    margin: auto;
+  }
+  .navbar {
+    height: 2.5rem;
+  }
 }

@@ -4,17 +4,33 @@ import Styles from "./Discovery.module.css";
 import Filter from "./Filter";
 import { data } from "../data/data";
 import Card from "./Card";
+import { useEffect } from "react";
 console.log("data:", data);
 
 const Discovery = ({ ham }) => {
   const [nav, setNav] = useState("talent");
+  const [windowWidth, setWindowWidth] = useState();
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, [windowWidth]);
 
   return (
     <div
       className={Styles.discovery}
       style={{
-        width: ham ? "86.5%" : "100%",
-        marginLeft: ham ? "10.5rem" : "0rem",
+        width:
+          ham && windowWidth > 400
+            ? "86.5%"
+            : windowWidth < 400 && ham
+            ? "87%"
+            : "100%",
+        marginLeft:
+          ham && windowWidth > 400
+            ? "10.5rem"
+            : windowWidth < 400 && ham
+            ? "3rem"
+            : "0rem",
       }}
     >
       <div>

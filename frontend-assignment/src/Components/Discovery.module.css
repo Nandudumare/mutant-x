@@ -1,7 +1,6 @@
 .discovery {
   height: 92vh;
   width: 100%;
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
   background-color: #f6f7f9;
@@ -10,7 +9,7 @@
 .discovery > div:nth-child(1) {
   height: 100%;
   width: 20%;
-  border-right: 1px solid rgb(196, 189, 189);
+  border-right: 1px solid rgb(219, 216, 216);
 }
 .discovery > div:nth-child(2) {
   height: 100%;
@@ -80,4 +79,64 @@
 .container {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@media (max-width: 400px) {
+  .discovery {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f7f9;
+  }
+
+  .discovery > div:nth-child(1) {
+    height: 100%;
+    width: 100%;
+    margin-top: 7rem;
+    border-right: 1px solid rgb(196, 189, 189);
+  }
+
+  .discovery > div:nth-child(2) {
+    background-color: #f6f7f9;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid blue; */
+  }
+
+  .container {
+    height: auto;
+    width: 100%;
+    overflow-y: scroll;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: repeat(auto, auto);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f7f9;
+    /* padding: 1rem; */
+  }
+
+  .head {
+    position: absolute;
+    width: 100%;
+    top: 2.5rem;
+  }
+
+  .searchDiv {
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    margin-top: 1rem;
+  }
+
+  .searchbar {
+    width: 95%;
+    height: 30px;
+    /* margin: auto; */
+    border: none;
+    margin-left: 0.5rem;
+  }
 }

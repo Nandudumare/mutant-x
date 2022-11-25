@@ -92,8 +92,6 @@
   text-align: left;
   padding: 0.6rem;
   overflow: hidden;
-  /* white-space: nowrap;
-  text-overflow: ellipsis; */
 }
 
 .skills_pro {
@@ -107,7 +105,6 @@
 }
 
 .skills_pro_per {
-  /* height: 20px; */
   width: auto;
   padding: 0.5rem;
   background-color: rgb(249, 235, 255);

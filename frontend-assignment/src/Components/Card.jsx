@@ -1,7 +1,5 @@
 import React from "react";
-
 import Styles from "./Card.module.css";
-
 import { GoPrimitiveDot } from "react-icons/go";
 import { AiFillStar } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";

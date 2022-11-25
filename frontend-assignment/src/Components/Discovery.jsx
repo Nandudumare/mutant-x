@@ -5,7 +5,6 @@ import Filter from "./Filter";
 import { data } from "../data/data";
 import Card from "./Card";
 import { useEffect } from "react";
-console.log("data:", data);
 
 const Discovery = ({ ham }) => {
   const [nav, setNav] = useState("talent");

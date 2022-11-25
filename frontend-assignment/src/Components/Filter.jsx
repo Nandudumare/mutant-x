@@ -8,6 +8,7 @@ const Filter = () => {
       <div>
         <h4 className={Styles.name}>Filters</h4>
         <h5 className={Styles.pods}>Pods</h5>
+
         <div className={Styles.pods__check}>
           <div>
             <input type="checkbox" />
@@ -22,6 +23,7 @@ const Filter = () => {
             Web, Mobile & Software Dev
           </div>
         </div>
+
         <h5 className={Styles.pods}>Categories</h5>
         <select name="" id="" className={Styles.selects}>
           <option value="">select...</option>
@@ -65,6 +67,7 @@ const Filter = () => {
               );
             })}
           </div>
+
           <div>
             <input type="checkbox" />
             {[1, 1, 1, 1, 0].map((el) => {
@@ -77,6 +80,7 @@ const Filter = () => {
             })}
             <span className={Styles.up}> & Up </span>
           </div>
+
           <div>
             <input type="checkbox" />
             {[1, 1, 1, 0, 0].map((el) => {
@@ -89,9 +93,9 @@ const Filter = () => {
             })}
             <span className={Styles.up}> & Up </span>
           </div>
+
           <div>
             <input type="checkbox" />
-
             <span className={Styles.up}> Unrated </span>
           </div>
         </div>

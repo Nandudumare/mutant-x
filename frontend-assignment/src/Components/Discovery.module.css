@@ -11,16 +11,15 @@
   width: 20%;
   border-right: 1px solid rgb(219, 216, 216);
 }
+
 .discovery > div:nth-child(2) {
   height: 100%;
   width: 80%;
-  /* border: 2px solid blue; */
 }
 
 .head {
   height: 5.1rem;
   background-color: white;
-  /* margin-top: -1rem; */
   display: flex;
   flex-direction: column;
 }
@@ -33,7 +32,6 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
-  /* gap: 1rem; */
   font-size: 0.8rem;
   align-items: center;
 }
@@ -42,7 +40,6 @@
   height: 20px;
   width: 70px;
   text-align: center;
-  /* border: 1px solid red; */
   cursor: pointer;
 }
 
@@ -56,7 +53,6 @@
 .searchbar {
   width: 95%;
   height: 30px;
-  /* margin: auto; */
   border: none;
   margin-left: 1.3rem;
 }
@@ -73,14 +69,17 @@
   justify-content: center;
   align-items: center;
 }
+
 .container::-webkit-scrollbar {
   display: none;
 }
+
 .container {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
+/* media Queries */
 @media (max-width: 400px) {
   .discovery {
     height: 92vh;
@@ -101,7 +100,6 @@
     background-color: #f6f7f9;
     height: 100%;
     width: 100%;
-    /* border: 2px solid blue; */
   }
 
   .container {
@@ -116,7 +114,6 @@
     justify-content: center;
     align-items: center;
     background-color: #f6f7f9;
-    /* padding: 1rem; */
   }
 
   .head {
@@ -135,7 +132,6 @@
   .searchbar {
     width: 95%;
     height: 30px;
-    /* margin: auto; */
     border: none;
     margin-left: 0.5rem;
   }

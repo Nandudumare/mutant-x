@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Oleo+Script+Swash+Caps&family=Shadows+Into+Light&family=Space+Mono&display=swap");
+
+::selection {
+  color: white;
+  background: rgba(91, 45, 183, 0.697);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+body {
+  background-color: #111111;
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: 600;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  /* border: 1px solid red; */
+  width: 95%;
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.share {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.share > span {
+  cursor: pointer;
+}
+
+.share__btn {
+  display: none;
+  position: absolute;
+  right: -0.2rem;
+  z-index: 1;
+  text-align: right;
+}
+
+.share__btn > p:hover {
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.share:hover .share__btn {
+  display: block;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  height: 25px;
+  width: 35px;
+  /* border: 1px solid white; */
+  justify-content: space-around;
+}
+
+.face > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.face > div:nth-child(1) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.face > div:nth-child(1) > div > div {
+  background-color: white;
+  border-radius: 1px;
+  height: 3px;
+  width: 10px;
+}
+
+.face > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.face > div:nth-child(2) > div {
+  background-color: white;
+  border-radius: 1px;
+  height: 3px;
+  width: 10px;
+}
+
+.navs {
+  /* border: 1px solid white; */
+  position: fixed;
+  bottom: 2.5rem;
+  left: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+  font-size: 0.9rem;
+}
+
+.navs > div:nth-child(1) {
+  width: 90px;
+}
+.navs > div:nth-child(3) {
+  width: 70px;
+}
+
+.navs > div:hover {
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+/* Text */
+
+.text {
+  margin-top: 7.5rem;
+  margin-left: 1.8rem;
+}
+
+.text > p:nth-child(1) {
+  font-size: 5.5rem;
+  font-weight: 1000;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.text > p:nth-child(1) > p {
+  padding: 0;
+  margin: 0;
+}
+
+.text > p:nth-child(2) {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 0.4;
+  word-spacing: normal;
+}
+
+.text > p:nth-child(1) {
+  position: relative;
+}
+
+.text > p:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 50%;
+  width: 30%;
+  top: 0.1rem;
+  background-color: #111111;
+  border-left: 2px solid white;
+  animation: typing1 0.5s steps(6) forwards;
+}
+
+@keyframes typing1 {
+  100% {
+    left: 27%;
+    border-left: 2px solid #111111;
+  }
+}
+
+.text > p:nth-child(1) > p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  top: 5.5rem;
+  background-color: #111111;
+  animation: typing2 1s steps(11) forwards;
+}
+
+@keyframes typing2 {
+  50% {
+    left: 0%;
+  }
+
+  100% {
+    left: 50%;
+    border-left: 2px solid white;
+  }
+}
+
+.text > p:nth-child(2) {
+  position: relative;
+}
+
+.text > p:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  top: -0.2rem;
+  background-color: #111111;
+  animation: typing3 1.7s steps(30) forwards;
+}
+
+@keyframes typing3 {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  30% {
+    left: 0%;
+  }
+  40% {
+    left: 0%;
+  }
+  50% {
+    left: 0%;
+  }
+  60% {
+    left: 10%;
+  }
+  70% {
+    left: 15%;
+  }
+  80% {
+    left: 20%;
+  }
+  90% {
+    left: 25%;
+  }
+  100% {
+    left: 32%;
+    border-left: 2px solid #111111;
+  }
+}
+
+.text > p:nth-child(2) > p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  top: 1.8rem;
+  background-color: #111111;
+  animation: typing4 2.55s steps(25) forwards;
+}
+
+@keyframes typing4 {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  30% {
+    left: 0%;
+  }
+  40% {
+    left: 0%;
+  }
+  50% {
+    left: 0%;
+  }
+  60% {
+    left: 0%;
+  }
+  70% {
+    left: 10%;
+  }
+  80% {
+    left: 20%;
+  }
+  90% {
+    left: 30%;
+  }
+  100% {
+    left: 33%;
+    /* border-left: 2px solid #111111; */
+  }
+}
+
+.arrowdown {
+  position: relative;
+  margin: auto;
+  width: 20px;
+  height: auto;
+  margin-top: 5.5rem;
+  color: #111111;
+}
+
+.down {
+  position: absolute;
+  left: 0.8rem;
+  font-size: 1.4rem;
+  animation: topdown 1s steps(5) infinite, blink 1s steps(15) infinite;
+  animation-delay: 2.5s;
+}
+
+@keyframes topdown {
+  0% {
+    top: 0rem;
+    color: white;
+  }
+
+  100% {
+    color: white;
+    top: 6rem;
+  }
+}
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  51%,
+  100% {
+    opacity: 1;
+  }
+}

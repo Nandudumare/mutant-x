@@ -1,7 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BsArrowDown } from "react-icons/bs";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const First = () => {
+  const arrowRef = useRef();
+
+  useEffect(() => {
+    gsap.fromTo(
+      arrowRef.current,
+      { autoAlpha: 1 },
+      {
+        duration: 1,
+        ease: "none",
+        autoAlpha: 0,
+        scrollTrigger: {
+          id: "arrow",
+          trigger: arrowRef.current,
+          start: "top center+=100",
+          toggleActions: "play none none reverse",
+          // markers: true,
+        },
+      }
+    );
+  }, []);
+
   return (
     <div>
       <div className="navbar">
@@ -47,7 +73,7 @@ const First = () => {
       </div>
 
       <div className="arrowdown">
-        <div className="down">
+        <div className="down" ref={arrowRef}>
           <BsArrowDown />
         </div>
       </div>

@@ -7,10 +7,10 @@ function App() {
   const [ham, setHam] = useState(false);
 
   return (
-    <div className="App">
+    <>
       <Navbar ham={ham} setHam={setHam} />
       <Discovery ham={ham} />
-    </div>
+    </>
   );
 }
 

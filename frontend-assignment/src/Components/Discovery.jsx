@@ -8,11 +8,29 @@ import { useEffect } from "react";
 
 const Discovery = ({ ham }) => {
   const [nav, setNav] = useState("talent");
+  const [dummyData, setDummyData] = useState(data);
   const [windowWidth, setWindowWidth] = useState();
+  const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, [windowWidth]);
+
+  const handleChange = (e) => {
+    try {
+      setSearchValue(e.target.value);
+      let value = new RegExp(`^${searchValue}`, `i`);
+      if (e.target.value.length > 0) {
+        const d = data.filter((el) => (value.test(el.name) ? el : ""));
+        setDummyData([...d]);
+        return;
+      } else {
+        setDummyData([...data]);
+      }
+    } catch (err) {
+      console.log("err:", err);
+    }
+  };
 
   return (
     <div
@@ -79,13 +97,15 @@ const Discovery = ({ ham }) => {
             type="text"
             placeholder="Search.."
             className={Styles.searchbar}
+            onChange={handleChange}
           />
         </div>
 
         <div className={Styles.container}>
-          {data.map((el) => {
-            return <Card key={Math.random()} el={el} />;
-          })}
+          {dummyData &&
+            dummyData.map((el) => {
+              return <Card key={Math.random()} el={el} />;
+            })}
         </div>
       </div>
     </div>

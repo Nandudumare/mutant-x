@@ -113,6 +113,7 @@
   .drawer {
     position: fixed !important;
     z-index: 2;
+    height: 100vh !important;
   }
 
   .drawer > div:nth-child(1) > div:nth-child(2) > div,
@@ -139,6 +140,6 @@
   }
 
   .navbar {
-    height: 2.5rem;
+    height: 2.8rem;
   }
 }

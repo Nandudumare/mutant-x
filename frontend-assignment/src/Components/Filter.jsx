@@ -1,11 +1,11 @@
 import React from "react";
 import { RiStarSFill } from "react-icons/ri";
-import Styles from "./Filter.module.css";
+import Styles from "../Styles/Filter.module.css";
 
 const Filter = () => {
   return (
     <div className={Styles.filter__}>
-      <div>
+      <section>
         <h4 className={Styles.name}>Filters</h4>
         <h5 className={Styles.pods}>Pods</h5>
 
@@ -55,6 +55,7 @@ const Filter = () => {
         </select>
 
         <h5 className={Styles.pods}>Rating</h5>
+
         <div className={Styles.pods__check}>
           <div>
             <input type="checkbox" />
@@ -99,11 +100,12 @@ const Filter = () => {
             <span className={Styles.up}> Unrated </span>
           </div>
         </div>
-      </div>
-      <div>
+      </section>
+
+      <section>
         <button className={Styles.btnAp}>Apply Filter</button>
         <button className={Styles.btnCl}>Clear All</button>
-      </div>
+      </section>
     </div>
   );
 };

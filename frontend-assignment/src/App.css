@@ -1,10 +1,12 @@
-#root > div > div:nth-child(2) > div > svg {
+#root > main > div:nth-child(2) > div > svg,
+#root > main > div:nth-child(2) > i > svg {
   height: 1.5rem !important;
   width: 2rem !important;
   color: white;
 }
 
-#root > div > div:nth-child(1) > svg {
+
+#root > main > div:nth-child(1) > svg {
   height: 1.5rem !important;
   width: 2rem !important;
   color: white;
@@ -15,7 +17,7 @@
 }
 
 @media (max-width: 400px) {
-  #root > div > div:nth-child(2) > div > svg {
+  #root > main > div:nth-child(2) > i > svg {
     height: 1.4rem !important;
     width: 2rem !important;
     color: white;

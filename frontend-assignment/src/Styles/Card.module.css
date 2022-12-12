@@ -26,8 +26,8 @@
   border-radius: 50%;
   position: absolute;
   top: -10%;
-  left: 50%;
-  transform: translate(-50%, -20%);
+  left: 38%;
+  transform: translate(-50%, -35%);
   object-fit: cover;
   border: 2px solid white;
 }

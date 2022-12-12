@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Card.module.css";
+import Styles from "../Styles/Card.module.css";
 import { GoPrimitiveDot } from "react-icons/go";
 import { AiFillStar } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";
@@ -9,7 +9,7 @@ const Card = ({ el }) => {
     <div className={Styles.card}>
       <div className={Styles.cover}></div>
       <div className={Styles.profile}>
-        <div className={Styles.img}>
+        <figure className={Styles.img}>
           <img
             src={el.profile}
             alt=""
@@ -17,12 +17,15 @@ const Card = ({ el }) => {
             width={"100%"}
             style={{ objectFit: "cover", borderRadius: "50%" }}
           />
-        </div>
+        </figure>
+
         <div className={Styles.name_pro}>
           <GoPrimitiveDot />
           {el.name}
         </div>
+
         <div className={Styles.pods_pro}>{el.pods}</div>
+
         <div className={Styles.ratings_location_pro}>
           <div>
             <AiFillStar />
@@ -33,7 +36,9 @@ const Card = ({ el }) => {
             {el.location}
           </div>
         </div>
-        <div className={Styles.description_pro}>{el.description}</div>
+
+        <article className={Styles.description_pro}>{el.description}</article>
+
         <div className={Styles.skills_pro}>
           {el.skills.map((el) => {
             return (

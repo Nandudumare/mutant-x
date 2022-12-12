@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Styles from "./Navbar.module.css";
+import Styles from "../Styles/Navbar.module.css";
 import { FiArrowLeft, FiMessageSquare } from "react-icons/fi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
@@ -18,29 +18,29 @@ const Navbar = ({ ham, setHam }) => {
   const [nav, setNav] = useState("discovery");
 
   return (
-    <div className={Styles.navbar}>
+    <main className={Styles.navbar}>
       <div style={{ margin: ham ? "0" : "" }}>
         {ham ? (
           <div className={Styles.drawer}>
-            <div>
-              <div>
+            <section>
+              <figure>
                 <img
                   src="https://uploads-ssl.webflow.com/5f86df42be670823afda53e2/5f86e6d0354137a81bd895f2_tribepod_logo_only_white.png"
                   alt=""
                   height={"100%"}
                   width={"100%"}
                 />
-              </div>
-              <div>
+              </figure>
+              <nav>
                 <div
                   onClick={() => setNav("discovery")}
                   style={{
                     backgroundColor: nav === "discovery" ? "#54576f" : "black",
                   }}
                 >
-                  <div>
+                  <i>
                     <AiOutlineSearch />
-                  </div>
+                  </i>
                   Discovery
                 </div>
                 <div
@@ -50,9 +50,9 @@ const Navbar = ({ ham, setHam }) => {
                       nav === "build_a_tribe" ? "#54576f" : "black",
                   }}
                 >
-                  <div>
+                  <i>
                     <AiOutlineUsergroupAdd />
-                  </div>
+                  </i>
                   Build a Tribe
                 </div>
                 <div
@@ -61,9 +61,9 @@ const Navbar = ({ ham, setHam }) => {
                     backgroundColor: nav === "my_tribe" ? "#54576f" : "black",
                   }}
                 >
-                  <div>
+                  <i>
                     <HiOutlineUsers />
-                  </div>
+                  </i>
                   My Tribes
                 </div>
                 <div
@@ -72,9 +72,9 @@ const Navbar = ({ ham, setHam }) => {
                     backgroundColor: nav === "my_pro" ? "#54576f" : "black",
                   }}
                 >
-                  <div>
+                  <i>
                     <AiFillFileText />
-                  </div>
+                  </i>
                   My Proposals
                 </div>
                 <div
@@ -83,9 +83,9 @@ const Navbar = ({ ham, setHam }) => {
                     backgroundColor: nav === "my_project" ? "#54576f" : "black",
                   }}
                 >
-                  <div>
+                  <i>
                     <IoMdFolderOpen />
-                  </div>
+                  </i>
                   My Projects
                 </div>
                 <div
@@ -94,43 +94,45 @@ const Navbar = ({ ham, setHam }) => {
                     backgroundColor: nav === "trans" ? "#54576f" : "black",
                   }}
                 >
-                  <div>
+                  <i>
                     <IoCrop />
-                  </div>
+                  </i>
                   Transactions
                 </div>
-              </div>
-            </div>
+              </nav>
+            </section>
             {/*  */}
-            <div>
+
+            <footer>
               <div className={Styles.settings}>
-                <div>
+                <i>
                   <MdOutlineSettings />
-                </div>
+                </i>
                 Settings
               </div>
 
               <div className={Styles.leftArrow} onClick={() => setHam(false)}>
                 <FiArrowLeft />
               </div>
-            </div>
+            </footer>
           </div>
         ) : (
           <GiHamburgerMenu onClick={() => setHam(true)} />
         )}
       </div>
+
       <div>
-        <div>
+        <i>
           <FiMessageSquare />
-        </div>
-        <div>
+        </i>
+        <i>
           <IoMdNotificationsOutline />
-        </div>
-        <div>
+        </i>
+        <i>
           <CgProfile />
-        </div>
+        </i>
       </div>
-    </div>
+    </main>
   );
 };
 

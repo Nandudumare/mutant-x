@@ -1,15 +1,10 @@
-import { useState } from "react";
 import "./App.css";
-import Discovery from "./Components/Discovery";
-import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
 
 function App() {
-  const [ham, setHam] = useState(false);
-
   return (
     <>
-      <Navbar ham={ham} setHam={setHam} />
-      <Discovery ham={ham} />
+      <Home />
     </>
   );
 }

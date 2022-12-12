@@ -34,25 +34,25 @@
   }
 }
 
-.drawer > div:nth-child(1) {
+.drawer > section {
   display: flex;
   flex-direction: column;
 }
 
-.drawer > div:nth-child(1) > div:nth-child(1) {
+.drawer > section > figure {
   height: 50px;
   width: 50px;
   object-fit: cover;
   margin: auto;
 }
 
-.drawer > div:nth-child(1) > div:nth-child(2) {
+.drawer > section > nav {
   display: flex;
   flex-direction: column;
   margin-top: 0.5rem;
 }
 
-.drawer > div:nth-child(1) > div:nth-child(2) > div,
+.drawer > section > nav > div,
 .settings {
   height: 35px;
   width: 92%;
@@ -77,8 +77,8 @@
   }
 }
 
-.drawer > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(1),
-.settings > div:nth-child(1) {
+.drawer > section > nav > div > i,
+.settings > i {
   font-size: 1.2rem;
 }
 
@@ -121,7 +121,7 @@
     height: 100% !important;
   }
 
-  .drawer > div:nth-child(1) > div:nth-child(2) > div,
+  .drawer > section > nav > div,
   .settings {
     width: 65%;
     animation-name: navs;
@@ -137,7 +137,7 @@
     }
   }
 
-  .drawer > div:nth-child(1) > div:nth-child(1) {
+  .drawer > section > figure {
     height: 35px;
     width: 35px;
     object-fit: cover;

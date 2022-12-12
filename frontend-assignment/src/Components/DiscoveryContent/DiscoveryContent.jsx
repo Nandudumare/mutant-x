@@ -23,6 +23,7 @@ const DiscoveryContent = () => {
       console.log("err:", err);
     }
   };
+
   return (
     <>
       <header data-testid="header" className={Styles.head}>

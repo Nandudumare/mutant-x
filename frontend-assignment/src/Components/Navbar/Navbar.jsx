@@ -117,7 +117,10 @@ const Navbar = ({ ham, setHam }) => {
             </footer>
           </div>
         ) : (
-          <GiHamburgerMenu onClick={() => setHam(true)} />
+          <GiHamburgerMenu
+            data-testid="hamburger"
+            onClick={() => setHam(true)}
+          />
         )}
       </div>
 

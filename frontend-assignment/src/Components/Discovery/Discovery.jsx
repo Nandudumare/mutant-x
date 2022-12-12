@@ -33,11 +33,11 @@ const Discovery = ({ ham }) => {
       className={Styles.discovery}
       style={styleForDiscovery}
     >
-      <section>
+      <section data-testid="filter-section">
         <Filter />
       </section>
 
-      <section>
+      <section data-testid="content-section">
         <DiscoveryContent />
       </section>
     </main>

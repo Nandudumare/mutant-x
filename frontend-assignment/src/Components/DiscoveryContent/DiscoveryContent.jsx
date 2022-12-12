@@ -25,7 +25,7 @@ const DiscoveryContent = () => {
   };
   return (
     <>
-      <header className={Styles.head}>
+      <header data-testid="header" className={Styles.head}>
         <h2 className={Styles.name_}>Discovery</h2>
         <nav className={Styles.navs_}>
           <div
@@ -63,7 +63,7 @@ const DiscoveryContent = () => {
         </nav>
       </header>
 
-      <section className={Styles.searchDiv}>
+      <section data-testid="searchBox" className={Styles.searchDiv}>
         <input
           type="text"
           placeholder="Search.."
@@ -72,7 +72,7 @@ const DiscoveryContent = () => {
         />
       </section>
 
-      <section className={Styles.container}>
+      <section data-testid="container" className={Styles.container}>
         {dummyData &&
           dummyData.map((el) => {
             return <Card key={Math.random()} el={el} />;

@@ -4,7 +4,7 @@ import Styles from "./Filter.module.css";
 
 const Filter = () => {
   return (
-    <div className={Styles.filter__}>
+    <div data-testid="filter" className={Styles.filter__}>
       <section>
         <h4 className={Styles.name}>Filters</h4>
         <h5 className={Styles.pods}>Pods</h5>

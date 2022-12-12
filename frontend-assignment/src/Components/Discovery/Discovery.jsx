@@ -28,7 +28,11 @@ const Discovery = ({ ham }) => {
   };
 
   return (
-    <main className={Styles.discovery} style={styleForDiscovery}>
+    <main
+      data-testid="discovery"
+      className={Styles.discovery}
+      style={styleForDiscovery}
+    >
       <section>
         <Filter />
       </section>

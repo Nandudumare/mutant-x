@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Styles from "../Styles/Navbar.module.css";
+import Styles from "./Navbar.module.css";
 import { FiArrowLeft, FiMessageSquare } from "react-icons/fi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
@@ -18,7 +18,7 @@ const Navbar = ({ ham, setHam }) => {
   const [nav, setNav] = useState("discovery");
 
   return (
-    <main className={Styles.navbar}>
+    <main data-testid="navbar" className={Styles.navbar}>
       <div style={{ margin: ham ? "0" : "" }}>
         {ham ? (
           <div className={Styles.drawer}>

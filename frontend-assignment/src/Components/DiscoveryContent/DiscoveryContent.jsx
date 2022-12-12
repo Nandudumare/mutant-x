@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Card from "./Card";
-import Styles from "../Styles/DiscoveryContent.module.css";
-import { data } from "../Data/data";
+import Styles from "./DiscoveryContent.module.css";
+import { data } from "../../Data/data";
+import Card from "../Card/Card";
 
 const DiscoveryContent = () => {
   const [nav, setNav] = useState("talent");

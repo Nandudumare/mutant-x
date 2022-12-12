@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import Styles from "../Styles/Discovery.module.css";
-import Filter from "./Filter";
+import Styles from "./Discovery.module.css";
+import Filter from "../Filter/Filter";
 import { useEffect } from "react";
-import DiscoveryContent from "./DiscoveryContent";
+import DiscoveryContent from "../DiscoveryContent/DiscoveryContent";
 
 const Discovery = ({ ham }) => {
   const [windowWidth, setWindowWidth] = useState();

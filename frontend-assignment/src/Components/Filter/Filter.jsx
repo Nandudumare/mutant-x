@@ -1,6 +1,6 @@
 import React from "react";
 import { RiStarSFill } from "react-icons/ri";
-import Styles from "../Styles/Filter.module.css";
+import Styles from "./Filter.module.css";
 
 const Filter = () => {
   return (

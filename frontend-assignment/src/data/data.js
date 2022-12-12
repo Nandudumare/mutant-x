@@ -79,4 +79,14 @@ export const data = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum a tempora sed optio. Fugit rem optio, consectetur nam in ratione itaque. Incidunt provident a...",
     skills: ["2D Animation"],
   },
+  {
+    name: "Aman Sahare",
+    profile: "https://i.pravatar.cc/300?u=a042581f4e29026704f",
+    pods: "Design & Creative",
+    rating: 2.5,
+    location: "Betul",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum a tempora sed optio. Fugit rem optio, consectetur nam in ratione itaque. Incidunt provident a...",
+    skills: ["2D Animation"],
+  },
 ];

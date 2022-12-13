@@ -1,0 +1,107 @@
+.head {
+  height: 5.1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.name_ {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.navs_ {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.navs_ > div {
+  height: 20px;
+  width: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.searchDiv {
+  width: 95%;
+  margin: auto;
+  height: 50px;
+  margin-top: 1rem;
+}
+
+.searchbar {
+  width: 95%;
+  height: 30px;
+  border: none;
+  margin-left: 1.3rem;
+}
+
+.container {
+  height: 430px;
+  width: 90.5%;
+  overflow-y: scroll;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: repeat(auto, auto);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* media Queries */
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(auto, auto);
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    height: auto;
+    width: 100%;
+    overflow-y: scroll;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: repeat(auto, auto);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f7f9;
+  }
+
+  .head {
+    position: absolute;
+    width: 100%;
+    top: 2.5rem;
+    /* height: 7.5rem; */
+  }
+
+  .searchDiv {
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    margin-top: 1rem;
+  }
+
+  .searchbar {
+    width: 95%;
+    height: 30px;
+    border: none;
+    margin-left: 0.5rem;
+  }
+}
